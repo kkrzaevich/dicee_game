@@ -1,0 +1,238 @@
+/* HTML elements */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Grid elements */
+
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    grid-row-start: 0;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.player1 {
+    display: flex;
+    justify-content: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.player2 {
+    display: flex;
+    justify-content: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.cube1 {
+    display: flex;
+    justify-content: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+.cube2 {
+    display: flex;
+    justify-content: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.play-button {
+    display: flex;
+    justify-content: center;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* Cubes */
+
+.cube {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    border: 2px solid white;
+}
+
+.num6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.num5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.num4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.num3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.num2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.num1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.cube p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 100px;
+    padding: 0px 5px;
+    margin: auto;
+}
+
+/* Cube dots */
+
+.num5-3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.num3-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.num3-3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/* States */
+
+.hidden {
+    display: none;
+}
+
+/* Margins */
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.player1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.player2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cube1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cube2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.play-button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling Individual Elements */
+
+h1 {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer {
+    font-size: 0.8rem;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid white;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Media queries */
+@media (max-width: 600px) {
+    .container { width: 300px;}
+}
+
